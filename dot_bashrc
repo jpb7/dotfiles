@@ -1,0 +1,41 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+PS1='[\u@\h \W]\$ '
+
+# 
+# Go configs
+#
+export PATH="$HOME/go/bin:$PATH"
+
+#
+# Starship configs
+#
+# Skip pre_prompt and starship if not in a graphical terminal
+if [[ "$TERM" == linux || -z "$DISPLAY" ]]; then
+  return
+fi
+
+# Only print newline before prompt if not at top row
+pre_prompt() {
+  local row col
+  IFS='[;' read -sdR -p $'\e[6n' _ row col
+
+  if [ "$row" -ne 1 ]; then
+    echo
+  fi
+}
+PROMPT_COMMAND=pre_prompt
+
+eval "$(starship init bash)"
+
+#
+# GTK theme
+#
+export GTK_THEME=Adwaita:dark

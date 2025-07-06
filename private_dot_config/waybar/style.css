@@ -1,0 +1,78 @@
+/* Bar container */
+#waybar {
+  background-color: #13132C; /* twilight purple */
+  background-color: #0D1025; /* deep violet blue */
+  background-color: #1F1A3D; /* slightly lifted */
+  background-color: #1A1532; /* midnight plum */
+  background-color: rgba(26, 21, 50, 0.8);
+  background-color: rgba(19, 19, 36, 0.9);
+  border-radius: 10px;
+  padding: 4px 12px;
+  font-family: "FiraCode Nerd Font", monospace;
+  color: #FCFFFD;
+  border: 2px solid rgba(100, 100, 100, 0.75);
+  border: 2px solid rgba(89, 89, 89, 0.75);
+  transition: background-color 0.3s ease;
+}
+
+/* Left module */
+
+/* Workspaces container */
+#workspaces {
+  padding: 0 10px;
+}
+#workspaces button {
+  color: #FCFFFD;
+  background: transparent;
+  border: none;
+  padding: 0 6px;
+  font-size: 17px;
+}
+#workspaces button:hover {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+#workspaces button.active {
+  text-shadow:
+    -1px -1px 0 #FCFFFD,
+    0px -1px 0 #FCFFFD,
+    1px -1px 0 #FCFFFD,
+    -1px  0px 0 #FCFFFD,
+    1px  0px 0 #FCFFFD,
+    -1px  1px 0 #FCFFFD,
+    0px  1px 0 #FCFFFD,
+    1px  1px 0 #FCFFFD;
+  color: #FB00DE;
+  transition: text-shadow 0.2s ease;
+}
+
+/* Center module */
+
+/* Clock container */
+#clock {
+  font-weight: 500;
+}
+
+/* Right module */
+
+/* Power menu */
+#custom-power {
+  padding: 0 20px;
+  font-size: 14px;
+  color: #FCFFFD;
+}
+
+/* TODO: de-fuzz */
+#custom-power:hover {
+  text-shadow:
+    -1px -1px 0 #FB00DE,
+    0px -1px 0 #FB00DE,
+    1px -1px 0 #FB00DE,
+    -1px  0px 0 #FB00DE,
+    1px  0px 0 #FB00DE,
+    -1px  1px 0 #FB00DE,
+    0px  1px 0 #FB00DE,
+    1px  1px 0 #FB00DE;
+}

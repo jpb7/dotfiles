@@ -1,0 +1,13 @@
+add_newline = false
+
+[directory]
+# style = "bold #CA71DF"
+style = "#C0C0C0"
+read_only = " "
+
+[character]
+# success_symbol = "[❯](#ffa1f4)"
+# success_symbol = "[❯](#ED01DB)"
+# success_symbol = "[❯](#CA71DF)"
+success_symbol = "[❯](white)"
+error_symbol = "[❯](red)"

@@ -1,0 +1,68 @@
+@define-color theme_selected_bg_color rgba(255, 1, 233, 0.925);
+@define-color theme_unfocused_selected_bg_color rgb(255, 1, 233);
+
+window {
+  color: #f0f0f0;
+  background-color: rgba(19, 19, 36, 0.925);
+}
+
+menubar {
+  background-color: rgba(19, 19, 36, 0.75);
+  border-bottom: 1px solid rgb(100, 100, 100);
+  padding: 5px;
+}
+
+toolbar {
+  padding: 0;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  background-color: rgba(19, 19, 36, 0.75);
+  color: #f0f0f0;
+}
+
+treeview.view {
+  background-color: rgba(19, 19, 36, 0.75);
+  color: #f0f0f0;
+}
+
+treeview.view:selected,
+treeview.view:selected:focus {
+  background-color: #ff00ff;
+  background-color: #CA71DF;
+  background-color: rgba(255, 1, 233, 0.925);
+}
+
+.thunar .standard-view .view {
+  background-color: rgba(19, 19, 36, 0.75);
+  color: #f0f0f0;
+}
+
+.thunar .standard-view {
+  padding-top: 15px;
+  border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+.thunar entry {
+  border-left: 1px solid rgb(100, 100, 100);
+  border-right: 1px solid rgb(100, 100, 100);
+  border-radius: 0;
+  background-color: rgb(19, 19, 36);
+}
+.thunar entry:focus {
+  outline: none;
+  box-shadow: none;
+}
+.thunar entry selection {
+  background-color: rgba(255, 1, 233, 0.925);
+}
+
+.sidebar {
+  padding: 10px;
+  background-color: #0f0f1a;
+  background-color: rgba(19, 19, 36, 0.75);
+  border-right: 1px solid rgb(100, 100, 100);
+}
+
+.sidebar row:selected {
+  background-color: #ff00ff;
+  background-color: rgba(255, 1, 233, 0.925);
+}

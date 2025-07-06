@@ -1,0 +1,9 @@
+width=600
+height=355
+location=center
+show=drun
+prompt=Search...
+insensitive=true
+allow_images=true
+show_actions=false
+image_size=24

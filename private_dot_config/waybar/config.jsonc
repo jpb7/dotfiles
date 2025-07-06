@@ -1,0 +1,39 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 34,
+  "margin-top": 6,
+  "margin-bottom": 0,
+  "margin-left": 10,
+  "margin-right": 10,
+  "spacing": 12,
+
+  "modules-left": [ "hyprland/workspaces" ],
+
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "format": "{icon}",
+    "active-only": false,
+    "format-icons": {
+      "active": "●",
+      "default": "○"
+    }
+  },
+
+  "modules-center": [ "clock" ],
+  "clock": {
+    "format": "{:%H:%M — %A, %d %B %Y}",
+    "tooltip": false,
+    "interval": 60
+  },
+
+  // TODO: make a proper dropdown
+  "modules-right": [ "custom/power" ],
+
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "~/.config/waybar/scripts/power-menu.sh",
+    "return-type": "none"
+  }
+}
